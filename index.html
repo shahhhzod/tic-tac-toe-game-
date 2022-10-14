@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>крестики нолики</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Крестики - нолики</h1>
+        <ul id="game">
+            <li data-pos="0,0"></li>
+            <li data-pos="0,1"></li>
+            <li data-pos="0,2"></li>
+            <li data-pos="1,0"></li>
+            <li data-pos="1,1"></li>
+            <li data-pos="1,2"></li>
+            <li data-pos="2,0"></li>
+            <li data-pos="2,1"></li> 
+            <li data-pos="2,2"></li>
+        </ul>
+        <button id="reset-game">Заново</button>
+        
+        <div id="game-messages">
+            <span class="player-x-win">Игрок 1 Выграл</span>
+            <span class="player-o-win">Игрок 2 Выграл</span>
+            <span class="draw">Ничья</span>
+        </div>
+        
+        <aside id="nfo">
+            <h2>Очередь</h2>
+            <div id="whos-turn" class="x">
+                <span class="x">Игрок 1</span>
+                <span class="o">Игрок 2</span>
+            </div>
+            </div>
+        </aside>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
